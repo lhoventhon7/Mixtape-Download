@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Mixtape Card Styling */
+.mixtape-card {
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mixtape-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.mixtape-avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn {
+    background-color: rgba(52, 58, 64, 0.8);
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: rgba(52, 58, 64, 1);
+    transform: scale(1.05);
+}
+
+
+
+/* Like Icon */
+.like-icon {
+    margin-left: 15px;
+    color: #ff5252;
+}
+
+.like-icon:hover {
+    color: #ff1744;
+}
+
+/* View Count */
+.view-count {
+    margin-left: 10px;
+    color: #555;
+}
+
+
+/* Ads Banner */
+.ads-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
