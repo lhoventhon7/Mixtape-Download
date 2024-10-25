@@ -1,0 +1,256 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+header h1 {
+    font-size: 2rem;
+    display: inline-block;
+
+}
+
+header h1 i {
+    position: sticky;
+    top: 10px; /* Adjust to your preferred offset */
+    margin-right: 10px;
+}
+#searchBox {
+    width: 250px;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: width 0.5s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.952);
+}
+
+#searchBox:focus {
+    width: 300px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(223, 11, 11, 0.877);
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+    animation: fadeOutIn 10s infinite;
+    box-shadow: 0 4px 10px rgba(6, 202, 236, 0.952);
+   
+
+}
+
+/* Main Body */
+.main-body {
+    display: grid;
+  /*  grid-template-columns: 40% auto; */
+  /*  grid-template-rows: 30% auto; */
+    
+   
+    
+}
+
+/* Blog Post and Music Download Sections */
+.blog-post-section, .music-download-section {
+    padding: 80px;
+  /*  max-height: 75vh;  Adjust to control the height */
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    display: flexbox;
+   
+}
+
+ 
+h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+h2 i {
+    margin-right: 10px;
+}
+
+/* Blog Post Boxes */
+.blog-post-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.blog-post-box {
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 100px rgba(247, 35, 35, 0.2);
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    padding-right: 20px;
+}
+
+.blog-post-box:hover {
+    transform: scale(1.02);
+}
+
+.blog-post-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.blog-image {
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.blog-text h4 {
+    margin-top: 0;
+}
+
+.blog-text p {
+    font-size: 0.9rem;
+}
+
+.post-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.blog-post-box:hover .post-image img {
+    transform: scale(1.1); /* Slight zoom-in on hover */
+    filter: blur(3px); /* Add blur effect */
+}
+
+
+
+/* Content styling */
+.post-content {
+    padding: 15px;
+    background-color: rgba(245, 209, 6, 0.8);
+    backdrop-filter: blur(5px); /* Apply blur effect on content */
+    border-radius: 10px;
+    position: relative;
+    bottom: 60px;
+    opacity: 0;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+/* Slide up content on hover */
+.blog-post-box:hover .post-content {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* Impression and Like Icons */
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.post-icons span {
+    color: #666;
+    font-weight: 600;
+}
+
+.post-icons i {
+    margin-right: 5px;
+    color: #ff5252; /* Change to preferred color */
+}
+
+/* Music Boxes */
+.music-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    
+}
+
+.music-box {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+.music-image {
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(247, 35, 35, 0.2);
+    margin-right: 15px;
+ 
+    
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #343a40;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.sidebar nav a:hover {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+/* Announcement Bar Animation */
+@keyframes fadeOutIn {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.announcement-bar .announcement {
+    animation: fadeOutIn 5s infinite;
+}
